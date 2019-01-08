@@ -1,0 +1,98 @@
+.our-team{
+    position:relative;
+    overflow: hidden;
+    height: 355px;
+}
+.our-team .team-pic > img{
+    width: 92%;
+    height:auto;
+}
+.our-team .team-profile{
+    background:aqua;
+    padding: 0 24px;
+    position: absolute;
+    right: 0;
+    bottom: -46%;
+    width: 90%;
+    min-height:245px;
+    transition: all 0.25s ease 0s;
+}
+.our-team:hover .team-profile{
+    bottom:0px;
+}
+.our-team .team-profile:before{
+    content: "";
+    border-bottom: 30px solid aqua;
+    border-right: 262px solid transparent;
+    position: absolute;
+    top:-30px;
+    left: 0;
+}
+.our-team .team-title{
+    line-height: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.our-team .team-title:after{
+    content:"";
+    display: block;
+    width: 10%;
+    border-bottom:4px solid #fff;
+    padding-bottom:5px;
+}
+.our-team .team-title a{
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color: #fff;
+    display: block;
+    transition:all 0.2s linear 0s;
+}
+.our-team .team-title a:hover{
+    color:#333;
+    text-decoration: none;
+}
+.our-team .team-title > small{
+    font-size: 16px;
+    font-weight: bold;
+    color:#fff
+
+}
+.our-team .description{
+    color: #fff;
+    line-height: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.our-team .description:after{
+    content:"";
+    display:block;
+    border-bottom:1px solid #fff;
+    margin-top: 10px;
+}
+.our-team .team-social{
+    padding:0;
+}
+.our-team .team-social > li{
+    display: inline-block;
+    margin-right: 12px;
+}
+.our-team .team-social > li > a{
+    color:#fff;
+    font-size:15px;
+}
+.our-team .team-social > li > a:hover{
+    text-decoration: none;
+}
+@media only screen and (max-width: 990px) {
+    .our-team{
+        width: 310px;
+        margin: 0 auto 15px;
+    }
+    .our-team .team-profile:before{
+        border-right: 300px solid transparent;
+    }
+}
+@media only screen and (max-width: 359px) {
+    .our-team{
+        width: auto;
+    }
+}
